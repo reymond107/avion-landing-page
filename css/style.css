@@ -1,11 +1,16 @@
 html {
     font-family: "Arial Narrow", tahoma, verdana, arial, sans-serif;
-    background-color: #C0C0C0
+    
 }
 
 body {
     padding: 0;
     margin: 0;
+    background-color: #707070
+}
+
+.brand-name {
+    font-size: 1.3em;
 }
 
 .hero {
@@ -46,11 +51,14 @@ body {
     align-items: center;
     background-color: #F0F0F0;
     box-sizing: border-box;
+    height: 60px;
     
 }
 
 .nav-links {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .nav-item {
@@ -59,16 +67,23 @@ body {
 
 .a-link {
     text-decoration: none;
+    font-weight: bold;
     color: #303030;
-    margin: 6px;
-    padding: 4px;
+    padding: 0.2em 0.4em 0.4em;
+    margin: 0;
+    border: 0;
+}
+
+.a-link:hover {
+     color: #808080;
 }
 
 .logo {
     position: relative;
     left: 2%;
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 5px;
 }
 
 .flex-container {
@@ -89,7 +104,7 @@ body {
 }
 
 .flex-item-card:hover {
-    background-color: #E0E0E0;
+    background-color: #F0F0F0;
     border: 2px solid lightskyblue;
     padding: 10px;
     margin: 5px;
@@ -109,7 +124,8 @@ body {
 
 .product-specs > li {
     text-align: left;
-    margin-left: 4em;
+    margin-left: 2.5em;
+    max-width: 100%;
 }
 
 .product-image {
